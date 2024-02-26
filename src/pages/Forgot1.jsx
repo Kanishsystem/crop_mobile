@@ -4,7 +4,6 @@ import {
   Text,
   View,
   SafeAreaView,
-
   ImageBackground,
   Image,
   TextInput,
@@ -14,14 +13,14 @@ import {
   CROP_LOGO,
   FORGOT_IMAGE,
   FORGOT_LOGO,
+  FORGOT_MSG,
   FRAME,
   LOGIN_BACK,
   LOGIN_IMAGE,
   LOGIN_IMAGE2,
   LOGIN_IMAGE3,
 } from "../../service/imageservices";
-
-const Forgot = () => {
+const Forgot1 = () => {
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -29,26 +28,15 @@ const Forgot = () => {
           <View style={styles.container1}>
             <ImageBackground style={styles.image1} source={FRAME}>
               <Image style={styles.image2} source={CROP_LOGO}></Image>
-              <Image style={styles.image3} source={FORGOT_LOGO}></Image>
-              <Text style={styles.text}>Forgot Pin?</Text>
-              <Text style={styles.text1}>
-                Enter Your details to request pin reset.
-              </Text>
-              
-              <TextInput
-                style={styles.text3}
-                placeholder="   CROP ID"
-              ></TextInput>
-              
-              
-              <View style={styles.button}>
-                <Button title="Send Mail" />
+              <Image style={styles.image3} source={FORGOT_MSG}></Image>
+              <Text style={styles.text}>Email sent!</Text>
+              <View style={styles.text1}>
+                <Text>We have sent the link</Text>
+                <Text>for reset your pin / Password</Text>
               </View>
-             
-                <Text style={styles.text6}>Back to Log In</Text>
-                
-             
-              
+              <View style={styles.button}>
+                <Button title="Back to Login" />
+              </View>
             </ImageBackground>
           </View>
         </ImageBackground>
@@ -67,34 +55,30 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
     width: 390,
-    
    
   },
 
   container1: {},
 
   image1: {
-    height: 644,
-    width: 365,
-    marginTop: 50,
-    marginLeft: 12,
+    height: 500,
+    width: 380,
+    marginTop: 170,
+    marginLeft: 6,
     borderRadius: 25,
   },
-
   image2: {
     height: 64,
     width: 137,
-    marginLeft: 100,
+    marginLeft: 117,
     marginTop: 10,
   },
-
   image3: {
     height: 194,
     width: 194,
     marginTop: 30,
     marginLeft: 90,
   },
-
   text: {
     color: "blue",
     fontWeight: "bold",
@@ -105,43 +89,14 @@ const styles = StyleSheet.create({
 
   text1: {
     marginTop: 20,
-    marginLeft: 70,
-  },
-
-  
-
-  text3: {
-    color: "blue",
-    backgroundColor: "white",
-    height: 42,
-    width: 310,
-    marginLeft: 28,
-    borderColor: "blue",
-    borderWidth: 2,
-    marginTop: 30,
-    borderRadius:8
-  },
-  
-  color: {
-    color: "blue",
+    alignItems: "center",
   },
 
   button: {
-   
-    marginTop:20,
-    width:310,
+    marginTop: 55,
+    width: 310,
     marginLeft: 28,
-    borderRadius:10
+    borderRadius: 10,
   },
-  text6:{
-    alignItems:"center",
-    justifyContent:"center",
-    color:"blue",
-    marginTop:120,
-    marginLeft:140,
-    fontWeight:"bold"
-  },
-  
 });
-
-export default Forgot;
+export default Forgot1;

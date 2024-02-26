@@ -9,3 +9,4 @@ export {default as LOGIN_IMAGE2} from "../assets/Loginlogo2.png";
 export {default as LOGIN_IMAGE3} from "../assets/Loginlogo3.png";
 export {default as FORGOT_IMAGE} from "../assets/Forgotback.jpg";
 export {default as FORGOT_LOGO} from "../assets/forgotimage.png";
+export {default as FORGOT_MSG} from "../assets/Messagelogo.png";
