@@ -10,3 +10,5 @@ export {default as LOGIN_IMAGE3} from "../assets/Loginlogo3.png";
 export {default as FORGOT_IMAGE} from "../assets/Forgotback.jpg";
 export {default as FORGOT_LOGO} from "../assets/forgotimage.png";
 export {default as FORGOT_MSG} from "../assets/Messagelogo.png";
+export {default as EFIL} from "../assets/Efil.jpg";
+export {default as TAJ} from "../assets/Taj.jpg";
