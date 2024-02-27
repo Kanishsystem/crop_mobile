@@ -13,11 +13,14 @@ import Cardone from './src/pages/Card';
 import Check from './src/pages/Checkbox';
 import Mycheck from './src/pages/Checkbox';
 import Dial from './src/pages/Dialog';
+import Fab from './src/pages/Fab';
+import Apps from './src/pages/Appbar';
+import List from './src/pages/List';
 
 export default function App() {
   return (
   <>
-  <Dial/>
+  <List/>
   </>
   );
 }

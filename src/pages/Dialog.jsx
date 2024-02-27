@@ -1,29 +1,32 @@
-import React, { useState } from 'react';
-import { View, Text } from 'react-native';
-import { Button, Dialog, Portal } from 'react-native-paper';
+import React, { useState } from "react";
+import { View, Text, Modal, Button } from "react-native";
 
 const Dial = () => {
-  const [visible, setVisible] = useState(false);
+  const [isModalVisible, setModalVisible] = useState(false);
 
-  const showDialog = () => setVisible(true);
-  const hideDialog = () => setVisible(false);
+  const showModal = () => setModalVisible(true);
+  const hideModal = () => setModalVisible(false);
 
   return (
-    <View>
-      <Button onPress={showDialog}>Show Dialog</Button>
+    <View style={{marginTop:250,marginLeft:120,}}>
+      <Button title="Show Dialog" onPress={showModal} />
 
-      <Portal>
-        <Dialog visible={visible} onDismiss={hideDialog}>
-          <Dialog.Title>Dialog Title</Dialog.Title>
-          <Dialog.Content>
-            <Text>This is the content of the dialog.</Text>
-          </Dialog.Content>
-          <Dialog.Actions>
-            <Button onPress={hideDialog}>Cancel</Button>
-            <Button onPress={hideDialog}>OK</Button>
-          </Dialog.Actions>
-        </Dialog>
-      </Portal>
+      <Modal
+        transparent={true}
+        visible={isModalVisible}
+        onRequestClose={hideModal}
+      >
+        <View
+          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+        >
+          <View
+            style={{ backgroundColor: "white", padding: 20, borderRadius: 10 }}
+          >
+            <Text style={{ marginBottom:17 }}>This is the content of the dialog.</Text>
+            <Button color="pink" title="Close" onPress={hideModal} />
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 };
