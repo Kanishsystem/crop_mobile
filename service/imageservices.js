@@ -12,3 +12,8 @@ export {default as FORGOT_LOGO} from "../assets/forgotimage.png";
 export {default as FORGOT_MSG} from "../assets/Messagelogo.png";
 export {default as EFIL} from "../assets/Efil.jpg";
 export {default as TAJ} from "../assets/Taj.jpg";
+export {default as YOU_HOME} from "../assets/Youtube.jpg";
+export {default as YOU} from "../assets/you.jpg";
+export {default as SHORTS} from "../assets/shorts.png";
+export {default as EDIT} from "../assets/Edit.jpg";
+export {default as SETTINGS} from "../assets/setting.jpg";

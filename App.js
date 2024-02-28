@@ -16,11 +16,16 @@ import Dial from './src/pages/Dialog';
 import Fab from './src/pages/Fab';
 import Apps from './src/pages/Appbar';
 import List from './src/pages/List';
+import TopViewContent from './src/pages/Topview';
+import Appss from './src/pages/Topview';
+import Bottom from './src/pages/Bottomtabs';
+import Search from './src/pages/searchbar';
+import Switchone from './src/pages/Switch';
 
 export default function App() {
   return (
   <>
-  <List/>
+  <Switchone/>
   </>
   );
 }
