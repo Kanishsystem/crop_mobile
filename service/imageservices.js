@@ -17,3 +17,7 @@ export {default as YOU} from "../assets/you.jpg";
 export {default as SHORTS} from "../assets/shorts.png";
 export {default as EDIT} from "../assets/Edit.jpg";
 export {default as SETTINGS} from "../assets/setting.jpg";
+export {default as CHATS} from "../assets/chat.jpg";
+export {default as STATUS} from "../assets/status.jpg";
+export {default as CALLS} from "../assets/Call.png";
+

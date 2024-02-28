@@ -2,71 +2,62 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet,ImageBackground } from "react-native";
+import { CALLS, CHATS, STATUS } from "../../service/imageservices";
 
 const Tab = createMaterialTopTabNavigator();
 
-const FirstScreen = () => (
-  <View
-    style={{
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "lightgreen",
-    }}
-  >
-    <Text style={styles.text}>First Screen Content</Text>
+const Chats = () => (
+  <View>
+        <ImageBackground style={styles.image1} source={CHATS}></ImageBackground>
+    
   </View>
 );
 
-const SecondScreen = () => (
-  <View
-    style={{
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "lightgreen",
-    }}
-  >
-    <Text style={styles.text}>Second Screen Content</Text>
+const Status = () => (
+  <View >
+  <ImageBackground style={styles.image1} source={STATUS}></ImageBackground>
+
+</View>
+);
+
+const Calls = () => (
+  <View>
+        <ImageBackground style={styles.image1} source={CALLS}></ImageBackground>
+    
   </View>
 );
 
-const ThirdScreen = () => (
-  <View
-    style={{
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "lightgreen",
-    }}
-  >
-    <Text style={styles.text}>Third Screen Content</Text>
-  </View>
-);
-
-const App = () => {
+const Top = () => {
   return (
+    <View style={styles.container}>
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen  name="Chats" component={FirstScreen} />
-        <Tab.Screen name="Status" component={SecondScreen} />
-        <Tab.Screen name="Calls" component={ThirdScreen} />
+     <Tab.Navigator>
+        <Tab.Screen  name="Chats" component={Chats} />
+        <Tab.Screen name="Status" component={Status} />
+        <Tab.Screen name="Calls" component={Calls} />
       </Tab.Navigator>
+      
     </NavigationContainer>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  text: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: 23,
+  container: {
+    flex: 1,
+    marginTop: 60,
   },
-  colors: {
-    backgroundColor: "green",
-    color:"blue"
-  },
+
+image1:{
+   height:740,
+   width:430,
+
+
+   
+
+}
+
 });
-export default App;
+export default Top;
 

@@ -42,7 +42,7 @@ const Settings = () => (
 const App = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator barStyle={{ backgroundColor: 'yellow' }}>
+      <Tab.Navigator>
        
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Shorts" component={Shorts} />

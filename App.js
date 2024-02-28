@@ -21,11 +21,12 @@ import Appss from './src/pages/Topview';
 import Bottom from './src/pages/Bottomtabs';
 import Search from './src/pages/searchbar';
 import Switchone from './src/pages/Switch';
+import Top from './src/pages/Topview';
 
 export default function App() {
   return (
   <>
-  <Switchone/>
+  <Top/>
   </>
   );
 }
