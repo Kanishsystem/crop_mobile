@@ -22,11 +22,16 @@ import Bottom from './src/pages/Bottomtabs';
 import Search from './src/pages/searchbar';
 import Switchone from './src/pages/Switch';
 import Top from './src/pages/Topview';
+import Icons from './src/pages/Icons';
+import TouchableHighlight from './src/pages/Touch';
+import Scrollviewex from './src/pages/Touchableopacity';
+import TouchableOpacityExample from './src/pages/Touchableopacity';
+import Scroll from './src/pages/Scrollview';
 
 export default function App() {
   return (
   <>
-  <Top/>
+  <Scroll/>
   </>
   );
 }
