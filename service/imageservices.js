@@ -20,4 +20,4 @@ export {default as SETTINGS} from "../assets/setting.jpg";
 export {default as CHATS} from "../assets/chat.jpg";
 export {default as STATUS} from "../assets/status.jpg";
 export {default as CALLS} from "../assets/Call.png";
-
+export {default as COMMUNITY} from "../assets/community.jpg";

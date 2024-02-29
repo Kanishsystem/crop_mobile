@@ -31,7 +31,7 @@ import Scroll from './src/pages/Scrollview';
 export default function App() {
   return (
   <>
-  <Scroll/>
+  <Top/>
   </>
   );
 }
