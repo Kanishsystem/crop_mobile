@@ -6,7 +6,7 @@ import {
   ScrollView,
   StatusBar,
 } from "react-native";
-import { TAJ } from "../../service/imageservices";
+
 
 const Scroll = () => {
   return (

@@ -12,8 +12,6 @@ import {
 } from "react-native";
 import {
   CROP_LOGO,
-  FORGOT_IMAGE,
-  FORGOT_LOGO,
   FRAME,
   LOGIN_BACK,
   LOGIN_IMAGE,
@@ -21,33 +19,40 @@ import {
   LOGIN_IMAGE3,
 } from "../../service/imageservices";
 
-const Forgot = () => {
+const Logintwo = () => {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <ImageBackground style={styles.image} source={FORGOT_IMAGE}>
+        <ImageBackground style={styles.image} source={LOGIN_BACK}>
           <View style={styles.container1}>
             <ImageBackground style={styles.image1} source={FRAME}>
               <Image style={styles.image2} source={CROP_LOGO}></Image>
-              <Image style={styles.image3} source={FORGOT_LOGO}></Image>
-              <Text style={styles.text}>Forgot Pin?</Text>
+              <Image style={styles.image3} source={LOGIN_IMAGE3}></Image>
+              <Text style={styles.text}>Login</Text>
               <Text style={styles.text1}>
-                Enter Your details to request pin reset.
+                Your access to a world of offers and rewards
               </Text>
-              
+              <View style={styles.text2}>
+                <Text>CROP ID</Text>
+                <Text>Mobile</Text>
+                <Text>Email</Text>
+              </View>
               <TextInput
                 style={styles.text3}
-                placeholder="   CROP ID"
+                placeholder="    Please enter email ID"
               ></TextInput>
-              
-              
-              <View style={styles.button}>
-                <Button title="Send Mail" />
+              <TextInput style={styles.text4} placeholder="    Password"></TextInput>
+              <View style={styles.text5}>
+                <Text>Remember me</Text>
+                <Text style={styles.color}>Forgot Pin?</Text>
               </View>
-             
-                <Text style={styles.text6}>Back to Log In</Text>
-                
-             
+              <View style={styles.button}>
+                <Button title="Login" />
+              </View>
+              <View style={styles.text6}>
+                <Text>Not a member?</Text>
+                <Text style={styles.colors}>Sign up now</Text>
+              </View>
               
             </ImageBackground>
           </View>
@@ -67,14 +72,13 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
     width: 390,
-    
-   
+  
   },
 
   container1: {},
 
   image1: {
-    height: 644,
+    height: 718,
     width: 365,
     marginTop: 50,
     marginLeft: 12,
@@ -99,29 +103,50 @@ const styles = StyleSheet.create({
     color: "blue",
     fontWeight: "bold",
     fontSize: 20,
-    marginLeft: 130,
+    marginLeft: 150,
     marginTop: 7,
   },
 
   text1: {
     marginTop: 20,
-    marginLeft: 70,
+    marginLeft: 37,
   },
 
-  
+  text2: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    marginTop: 28,
+  },
 
   text3: {
     color: "blue",
     backgroundColor: "white",
     height: 42,
-    width: 310,
-    marginLeft: 28,
+    width: 320,
+    marginLeft: 20,
     borderColor: "blue",
     borderWidth: 2,
-    marginTop: 30,
+    marginTop: 20,
     borderRadius:8
   },
-  
+  text4: {
+    color: "grey",
+    backgroundColor: "white",
+    height: 42,
+    width: 320,
+    marginLeft: 20,
+    borderColor: "grey",
+    borderWidth: 2,
+    marginTop: 20,
+    borderRadius:8
+  },
+  text5: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 10,
+  },
+
   color: {
     color: "blue",
   },
@@ -129,19 +154,18 @@ const styles = StyleSheet.create({
   button: {
    
     marginTop:20,
-    width:310,
-    marginLeft: 28,
-    borderRadius:10
+    width:320,
+    marginLeft: 20,
   },
   text6:{
     alignItems:"center",
     justifyContent:"center",
-    color:"blue",
-    marginTop:120,
-    marginLeft:140,
-    fontWeight:"bold"
+    flexDirection:"row",
+    marginTop:30
   },
-  
+  colors:{
+    color:"blue",
+  }
 });
 
-export default Forgot;
+export default Logintwo;

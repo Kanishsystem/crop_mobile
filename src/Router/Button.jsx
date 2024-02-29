@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, Card, Checkbox, Dialog, FAB, TextInput, Title, Paragraph, Snackbar } from 'react-native-paper';
 import { SafeAreaView } from 'react-native';
-const Paper = () => {
+const SoftButton = () => {
     return (
       <SafeAreaView>
         <View style={styles.container}>
@@ -52,4 +52,4 @@ const Paper = () => {
         
       });
       
-      export default Paper;
+      export default SoftButton;

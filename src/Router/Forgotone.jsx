@@ -20,7 +20,7 @@ import {
   LOGIN_IMAGE2,
   LOGIN_IMAGE3,
 } from "../../service/imageservices";
-const Forgot1 = () => {
+const Forgotone = () => {
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
 });
-export default Forgot1;
+export default Forgotone;

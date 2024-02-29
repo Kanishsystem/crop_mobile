@@ -8,7 +8,7 @@ const Dial = () => {
   const hideModal = () => setModalVisible(false);
 
   return (
-    <View style={{marginTop:250,marginLeft:120,}}>
+    <View style={{marginTop:250,}}>
       <Button title="Show Dialog" onPress={showModal} />
 
       <Modal

@@ -16,10 +16,9 @@ import {
   LOGIN_BACK,
   LOGIN_IMAGE,
   LOGIN_IMAGE2,
-  LOGIN_IMAGE3,
 } from "../../service/imageservices";
 
-const Login3 = () => {
+const Loginone = () => {
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -27,7 +26,7 @@ const Login3 = () => {
           <View style={styles.container1}>
             <ImageBackground style={styles.image1} source={FRAME}>
               <Image style={styles.image2} source={CROP_LOGO}></Image>
-              <Image style={styles.image3} source={LOGIN_IMAGE3}></Image>
+              <Image style={styles.image3} source={LOGIN_IMAGE2}></Image>
               <Text style={styles.text}>Login</Text>
               <Text style={styles.text1}>
                 Your access to a world of offers and rewards
@@ -39,9 +38,9 @@ const Login3 = () => {
               </View>
               <TextInput
                 style={styles.text3}
-                placeholder="    Please enter email ID"
+                placeholder="    Please enter CROP ID"
               ></TextInput>
-              <TextInput style={styles.text4} placeholder="    Password"></TextInput>
+              <TextInput style={styles.text4} placeholder="    Pin"></TextInput>
               <View style={styles.text5}>
                 <Text>Remember me</Text>
                 <Text style={styles.color}>Forgot Pin?</Text>
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 844,
     width: 390,
-  
+   
   },
 
   container1: {},
@@ -168,4 +167,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Login3;
+export default Loginone;

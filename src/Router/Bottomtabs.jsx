@@ -39,7 +39,7 @@ const Settings = () => (
   </View>
   );
 
-const Bottom = () => {
+const Bottomtabs = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
@@ -80,4 +80,4 @@ const styles = StyleSheet.create({
     }
 
 });
-export default Bottom;
+export default Bottomtabs;
