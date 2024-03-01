@@ -23,3 +23,5 @@ export {default as CALLS} from "../assets/Call.png";
 export {default as COMMUNITY} from "../assets/community.jpg";
 export {default as CHATS} from "../assets/icongirl.jpeg";
 export {default as CHAT} from "../assets/boy.png";
+export {default as UPDATE} from "../assets/girl.jpeg";
+export {default as RECENTONE} from "../assets/GIRL.png";

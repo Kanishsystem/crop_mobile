@@ -18,7 +18,9 @@ import {
   CHAT,
   CHATS,
   COMMUNITY,
+  RECENTONE,
   STATUS,
+  UPDATE,
 } from "../../service/imageservices";
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -62,9 +64,11 @@ const Chats = () => (
     <View>
       <Image style={styles.image1} source={CHATS}></Image>
       <Text style={styles.text4}>Anitha</Text>
-      <Icon name="check" size={18} color="grey" style={styles.icons} />
+      {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
       <Text style={styles.text5}>How are you..</Text>
       <Text style={styles.text6}>11.43 am</Text>
+      <Icon name="circle" size={23} color="green" style={styles.icons1} />
+      <Text style={styles.text9}>5</Text>
 
       <View style={styles.con}>
         <Icon name="lock" size={18} color="grey" style={styles.icon1} />
@@ -75,7 +79,63 @@ const Chats = () => (
   </View>
 );
 
-const Updates = () => <View></View>;
+const Updates = () => (
+  <View>
+    <View>
+      <Text style={styles.text13}> Status</Text>
+    </View>
+    <View>
+      <Image style={styles.image4} source={UPDATE}></Image>
+      <Icon name="circle" size={33} color="white" style={styles.icons4} />
+      <Icon name="circle" size={25} color="#12c46b" style={styles.icons2} />
+      <Text style={styles.text10}>+</Text>
+
+      <Text style={styles.text11}>My Status</Text>
+      <Text style={styles.text12}>Tap to add status update</Text>
+    </View>
+
+    <View>
+      <Text style={styles.text14}>Recent updates</Text>
+      <Image style={styles.image5} source={RECENTONE}></Image>
+      <Text style={styles.text15}>Geetha</Text>
+      <Text style={styles.text16}>10 minutes ago</Text>
+      <Image style={styles.image5} source={CHATS}></Image>
+      <Image style={styles.image5} source={CHAT}></Image>
+
+      <View style={styles.contain}>
+        <Text style={styles.text15}>Anitha</Text>
+        <Text style={styles.text19}>28 minutes ago</Text>
+      </View>
+
+      <View style={styles.contain1}>
+        <Text style={styles.text15}>Balaji</Text>
+        <Text style={styles.text19}>45 minutes ago</Text>
+      </View>
+    </View>
+
+    <View>
+      <Text style={styles.text14}>Viewed updates</Text>
+      <Image style={styles.image6} source={RECENTONE}></Image>
+      <Text style={styles.text15}>Sharmila</Text>
+      <Text style={styles.text16}>10.00 am</Text>
+      <Image style={styles.image6} source={CHATS}></Image>
+
+      <View style={styles.contain}>
+        <Text style={styles.text15}>Vino</Text>
+        <Text style={styles.text19}>9.28 am</Text>
+      </View>
+    </View>
+
+    <View>
+      <Icon name="square" size={43} color="#ced6d0" style={styles.icons5} />
+      <Icon name="pencil" size={20} color="grey" style={styles.icons3} />
+    </View>
+    <View>
+      <Icon name="square" size={63} color="#12c46b" style={styles.icons8} />
+      <Icon name="camera" size={20} color="white" style={styles.icons9} />
+    </View>
+  </View>
+);
 
 const Calls = () => <View></View>;
 
@@ -84,8 +144,9 @@ const Toptabs = () => {
     <View style={styles.container}>
       <Text style={styles.Text}>WhatsApp</Text>
       <View style={styles.cons}>
-        <Icon name="camera" size={25} color="black" />
-        <Icon name="ellipsis-v" size={25} color="black" style={styles.dot} />
+        <Icon name="camera" size={23} color="black" style={styles.dot1} />
+        <Icon name="search" size={23} color="black" />
+        <Icon name="ellipsis-v" size={23} color="black" style={styles.dot} />
       </View>
 
       <NavigationContainer>
@@ -107,6 +168,13 @@ const styles = StyleSheet.create({
     padding: 6,
   },
 
+  but1: {
+    height: 50,
+    width: 10,
+    backgroundColor: "#ced6d0",
+    borderCurve: 0,
+  },
+
   image1: {
     width: 50,
     height: 50,
@@ -114,18 +182,66 @@ const styles = StyleSheet.create({
     marginTop: 10,
     borderRadius: 20,
   },
+  text19: {
+    flexDirection: "row",
+    marginLeft: 81,
+    marginTop: 65,
+    color: "grey",
+  },
+
+  image4: {
+    width: 65,
+    height: 65,
+    resizeMode: "contain",
+    marginLeft: 10,
+    marginTop: 10,
+    borderRadius: 30,
+  },
+
+  image5: {
+    width: 58,
+    height: 58,
+    resizeMode: "contain",
+    marginLeft: 12,
+    marginTop: 10,
+    borderRadius: 30,
+    borderWidth: 3,
+    borderColor: "green",
+  },
+  image6: {
+    width: 58,
+    height: 58,
+    resizeMode: "contain",
+    marginLeft: 12,
+    marginTop: 10,
+    borderRadius: 30,
+    borderWidth: 3,
+    borderColor: "grey",
+  },
+
   Text: {
     fontSize: 28,
     color: "green",
   },
   cons: {
     position: "absolute",
-    marginLeft: 330,
+    marginLeft: 305,
     marginBottom: 50,
     flexDirection: "row",
+    marginTop: 10,
   },
   dot: {
-    marginLeft: 30,
+    marginLeft: 20,
+  },
+
+  contain: {
+    position: "absolute",
+    marginTop: 65,
+  },
+
+  contain1: {
+    position: "absolute",
+    marginTop: 135,
   },
 
   image3: {
@@ -206,11 +322,121 @@ const styles = StyleSheet.create({
     marginRight: 7,
   },
 
+  icons2: {
+    position: "absolute",
+    marginTop: 47,
+    marginLeft: 54,
+  },
+
+  icons4: {
+    position: "absolute",
+    marginTop: 43,
+    marginLeft: 51,
+  },
+
   text8: {
     color: "green",
   },
   text7: {
     marginRight: 6,
+  },
+
+  icons1: {
+    position: "absolute",
+    marginLeft: 340,
+    marginTop: 35,
+  },
+
+  text9: {
+    position: "absolute",
+    marginLeft: 347,
+    marginTop: 36,
+    color: "white",
+  },
+
+  text10: {
+    position: "absolute",
+    marginLeft: 58,
+    marginTop: 45,
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 20,
+  },
+
+  dot1: {
+    marginRight: 20,
+    marginEnd: 20,
+  },
+
+  text11: {
+    fontSize: 19,
+    position: "absolute",
+    marginLeft: 90,
+    marginTop: 17,
+  },
+
+  text12: {
+    position: "absolute",
+    marginLeft: 90,
+    marginTop: 45,
+    color: "grey",
+  },
+
+  text13: {
+    fontSize: 23,
+    marginLeft: 10,
+    marginTop: 7,
+    marginBottom: 7,
+  },
+
+  text14: {
+    marginTop: 10,
+    marginLeft: 19,
+    color: "grey",
+    fontSize: 12,
+  },
+
+  text15: {
+    position: "absolute",
+    marginTop: 40,
+    marginLeft: 81,
+    fontSize: 18,
+  },
+
+  text16: {
+    color: "grey",
+    position: "absolute",
+    marginTop: 65,
+    marginLeft: 82,
+    flexDirection: "row",
+  },
+
+  text20: {
+    position: "absolute",
+    marginLeft: 90,
+    marginTop: 5,
+  },
+  icons3: {
+    position: "absolute",
+    marginLeft: 360,
+    marginTop: 110,
+  },
+
+  icons5: {
+    marginLeft: 350,
+    marginTop: 100,
+  },
+
+  icons8:{
+  marginTop:10,
+  marginLeft:340
+
+  },
+
+  icons9:{
+    position:"absolute",
+    marginLeft:357,
+    marginTop:32
   },
 });
 export default Toptabs;
