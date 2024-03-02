@@ -11,9 +11,12 @@ import {
   Image,
   Title,
   Paragraph,
+  ScrollView,
 } from "react-native";
 import { Button } from "react-native-paper";
 import {
+  CALLIN,
+  CALLOUT,
   CALLS,
   CHAT,
   CHATS,
@@ -21,6 +24,7 @@ import {
   RECENTONE,
   STATUS,
   UPDATE,
+  UPDATES,
 } from "../../service/imageservices";
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -48,27 +52,118 @@ const Community = () => (
 );
 
 const Chats = () => (
-  <View>
-    <Image style={styles.image1} source={CHATS}></Image>
-    <Text style={styles.text4}>Sharmila</Text>
-    <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
-    <Text style={styles.text5}>Hiii... Yuva</Text>
-    <Text style={styles.text6}>6.00 am</Text>
-    <View>
-      <Image style={styles.image1} source={CHAT}></Image>
-      <Text style={styles.text4}>Balaji</Text>
-      <Icon name="check" size={18} color="green" style={styles.icons} />
-      <Text style={styles.text5}>This is Balaji..</Text>
-      <Text style={styles.text6}>5.27 pm</Text>
-    </View>
+  <ScrollView>
     <View>
       <Image style={styles.image1} source={CHATS}></Image>
-      <Text style={styles.text4}>Anitha</Text>
-      {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
-      <Text style={styles.text5}>How are you..</Text>
-      <Text style={styles.text6}>11.43 am</Text>
-      <Icon name="circle" size={23} color="green" style={styles.icons1} />
-      <Text style={styles.text9}>5</Text>
+      <Text style={styles.text4}>Sharmila</Text>
+      <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
+      <Text style={styles.text5}>Hiii... Yuva</Text>
+      <Text style={styles.text6}>6.00 am</Text>
+      <View>
+        <Image style={styles.image1} source={CHAT}></Image>
+        <Text style={styles.text4}>Arun</Text>
+        <Icon name="check" size={18} color="#13ba3f" style={styles.icons} />
+        <Text style={styles.text5}>This is Arun..</Text>
+        <Text style={styles.text6}>5.27 pm</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>How are you..</Text>
+        <Text style={styles.text6}>11.43 am</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>5</Text>
+      </View>
+
+      <View>
+        <Image style={styles.image1} source={UPDATE}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>What you doing..?</Text>
+        <Text style={styles.text6}>Yesterday</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>9</Text>
+      </View>
+
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>How are you..</Text>
+        <Text style={styles.text6}>11.43 am</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>5</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHAT}></Image>
+        <Text style={styles.text4}>Magesh</Text>
+        <Icon name="check" size={18} color="#13ba3f" style={styles.icons} />
+        <Text style={styles.text5}>This is Magesh..</Text>
+        <Text style={styles.text6}>5.27 pm</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>How are you..</Text>
+        <Text style={styles.text6}>11.43 am</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>5</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={UPDATE}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>What you doing..?</Text>
+        <Text style={styles.text6}>Yesterday</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>9</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHAT}></Image>
+        <Text style={styles.text4}>Magesh</Text>
+        <Icon name="check" size={18} color="#13ba3f" style={styles.icons} />
+        <Text style={styles.text5}>This is Magesh..</Text>
+        <Text style={styles.text6}>5.27 pm</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Anitha</Text>
+        {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
+        <Text style={styles.text5}>How are you..</Text>
+        <Text style={styles.text6}>11.43 am</Text>
+        <Icon name="circle" size={23} color="green" style={styles.icons1} />
+        <Text style={styles.text9}>5</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Sharmila</Text>
+        <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
+        <Text style={styles.text5}>Hiii... Yuva</Text>
+        <Text style={styles.text6}>6.00 am</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Sharmila</Text>
+        <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
+        <Text style={styles.text5}>Hiii... Yuva</Text>
+        <Text style={styles.text6}>6.00 am</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Sharmila</Text>
+        <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
+        <Text style={styles.text5}>Hiii... Yuva</Text>
+        <Text style={styles.text6}>6.00 am</Text>
+      </View>
+      <View>
+        <Image style={styles.image1} source={CHATS}></Image>
+        <Text style={styles.text4}>Sharmila</Text>
+        <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
+        <Text style={styles.text5}>Hiii... Yuva</Text>
+        <Text style={styles.text6}>6.00 am</Text>
+      </View>
 
       <View style={styles.con}>
         <Icon name="lock" size={18} color="grey" style={styles.icon1} />
@@ -76,7 +171,7 @@ const Chats = () => (
         <Text style={styles.text8}>end-to-end encrypted</Text>
       </View>
     </View>
-  </View>
+  </ScrollView>
 );
 
 const Updates = () => (
@@ -100,16 +195,10 @@ const Updates = () => (
       <Text style={styles.text15}>Geetha</Text>
       <Text style={styles.text16}>10 minutes ago</Text>
       <Image style={styles.image5} source={CHATS}></Image>
-      <Image style={styles.image5} source={CHAT}></Image>
 
       <View style={styles.contain}>
         <Text style={styles.text15}>Anitha</Text>
         <Text style={styles.text19}>28 minutes ago</Text>
-      </View>
-
-      <View style={styles.contain1}>
-        <Text style={styles.text15}>Balaji</Text>
-        <Text style={styles.text19}>45 minutes ago</Text>
       </View>
     </View>
 
@@ -127,6 +216,15 @@ const Updates = () => (
     </View>
 
     <View>
+      <Text style={styles.texts5}>Channels</Text>
+      <Text style={styles.texts6}>+</Text>
+      <Text style={styles.texts7}>
+        Stay updated on topics that matter to you.channels
+      </Text>
+      <Text style={styles.texts8}>to follow below.</Text>
+    </View>
+
+    <View>
       <Icon name="square" size={43} color="#ced6d0" style={styles.icons5} />
       <Icon name="pencil" size={20} color="grey" style={styles.icons3} />
     </View>
@@ -137,7 +235,57 @@ const Updates = () => (
   </View>
 );
 
-const Calls = () => <View></View>;
+const Calls = () => (
+  <View>
+    <View>
+      <Icon name="circle" size={63} color="#13ba3f" style={styles.icons10} />
+      <Icon name="link" size={33} color="white" style={styles.icons11} />
+      <Text style={styles.texts}>Create call link</Text>
+      <Text style={styles.texts1}>Share a link for your whatsApp call</Text>
+    </View>
+    <View>
+      <Text style={styles.texts2}>Recents</Text>
+    </View>
+
+    <View>
+      <Image style={styles.image9} source={RECENTONE}></Image>
+      <Text style={styles.texts3}>Geetha</Text>
+      <Image style={styles.image7} source={CALLIN}></Image>
+      <Text style={styles.texts4}>Today, 6:40 am</Text>
+      <Icon name="phone" size={23} color="#13ba3f" style={styles.dots} />
+
+      <View>
+        <Image style={styles.image9} source={CHATS}></Image>
+        <Text style={styles.texts3}>Anitha</Text>
+        <Image style={styles.image7} source={CALLOUT}></Image>
+        <Text style={styles.texts4}>Yesterday, 10:36 am</Text>
+        <Icon name="phone" size={23} color="#13ba3f" style={styles.dots} />
+      </View>
+
+      <View>
+        <Image style={styles.image9} source={UPDATE}></Image>
+        <Text style={styles.texts3}>Pooja</Text>
+        <Image style={styles.image7} source={CALLIN}></Image>
+        <Text style={styles.texts4}>Monday, 12:16 pm</Text>
+        <Icon name="phone" size={23} color="#13ba3f" style={styles.dots} />
+      </View>
+
+      <View>
+        <Image style={styles.image9} source={CHAT}></Image>
+        <Text style={styles.texts3}>Vicky</Text>
+        <Image style={styles.image7} source={CALLOUT}></Image>
+        <Text style={styles.texts4}>Yesterday, 10:36 am</Text>
+        <Icon name="phone" size={23} color="#13ba3f" style={styles.dots} />
+      </View>
+
+      <View style={styles.con}>
+        <Icon name="lock" size={18} color="grey" style={styles.icon1} />
+        <Text style={styles.text7}>Your Personal Calls are</Text>
+        <Text style={styles.text8}>end-to-end encrypted</Text>
+      </View>
+    </View>
+  </View>
+);
 
 const Toptabs = () => {
   return (
@@ -206,8 +354,18 @@ const styles = StyleSheet.create({
     marginTop: 10,
     borderRadius: 30,
     borderWidth: 3,
-    borderColor: "green",
+    borderColor: "#13ba3f",
   },
+
+  image9: {
+    width: 58,
+    height: 58,
+    resizeMode: "contain",
+    marginLeft: 12,
+    marginTop: 10,
+    borderRadius: 30,
+  },
+
   image6: {
     width: 58,
     height: 58,
@@ -427,16 +585,95 @@ const styles = StyleSheet.create({
     marginTop: 100,
   },
 
-  icons8:{
-  marginTop:10,
-  marginLeft:340
-
+  icons8: {
+    marginTop: 10,
+    marginLeft: 340,
   },
 
-  icons9:{
-    position:"absolute",
-    marginLeft:357,
-    marginTop:32
+  icons9: {
+    position: "absolute",
+    marginLeft: 357,
+    marginTop: 32,
+  },
+
+  icons10: {
+    marginTop: 7,
+    marginLeft: 7,
+  },
+
+  icons11: {
+    position: "absolute",
+    marginLeft: 19,
+    marginTop: 23,
+  },
+
+  texts: {
+    position: "absolute",
+    marginTop: 15,
+    marginLeft: 77,
+    fontSize: 17,
+  },
+
+  texts1: {
+    color: "grey",
+    position: "absolute",
+    marginLeft: 77,
+    marginTop: 40,
+  },
+
+  texts2: {
+    marginLeft: 10,
+    marginTop: 11,
+    fontSize: 15,
+  },
+
+  texts3: {
+    position: "absolute",
+    marginLeft: 80,
+    fontSize: 18,
+    marginTop: 8,
+  },
+  image7: {
+    height: 15,
+    width: 15,
+    position: "absolute",
+    marginLeft: 80,
+    marginTop: 38,
+  },
+  texts4: {
+    color: "grey",
+    position: "absolute",
+    marginLeft: 100,
+    marginTop: 34,
+  },
+
+  dots: {
+    position: "absolute",
+    marginLeft: 370,
+    marginTop: 14,
+  },
+
+  texts5: {
+    position: "absolute",
+    marginTop: 10,
+    marginLeft: 10,
+    fontSize: 20,
+  },
+
+  texts6: {
+    position: "absolute",
+    fontSize: 33,
+    marginLeft: 370,
+  },
+
+  texts7: {
+    marginLeft: 10,
+    color: "grey",
+    marginTop: 40,
+  },
+  texts8: {
+    marginLeft: 10,
+    color: "grey",
   },
 });
 export default Toptabs;

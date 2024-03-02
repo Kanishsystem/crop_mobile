@@ -25,3 +25,7 @@ export {default as CHATS} from "../assets/icongirl.jpeg";
 export {default as CHAT} from "../assets/boy.png";
 export {default as UPDATE} from "../assets/girl.jpeg";
 export {default as RECENTONE} from "../assets/GIRL.png";
+export {default as CALLIN} from "../assets/call1.png";
+export {default as CALLOUT} from "../assets/call2.png";
+export {default as WHATSAPP} from "../assets/whats.jpg";
+export {default as TICK} from "../assets/tick.jpg";
