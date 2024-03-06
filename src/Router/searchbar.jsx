@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const search_bar = () => {
+const searchbar = () => {
   const [search, setSearch] = useState("");
 
   const handleSearch = (text) => {
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default search_bar;
+export default searchbar;

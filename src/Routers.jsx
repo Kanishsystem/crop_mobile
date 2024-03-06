@@ -19,6 +19,12 @@ import Scroll from './Router/Scrollview';
 import search_bar from './Router/searchbar';
 import Switchone from './Router/Switch';
 import Toptabs from './Router/Toptabs';
+import Mobilecards from './Router/Mobilecard';
+import { SearchBar } from 'react-native-elements';
+import searchbar from './Router/searchbar';
+import HomeTop from './Router/HomeTop';
+import Homecard from './Router/Homecard';
+import YourParentComponent from './Router/Parenthome';
 const Stack = createStackNavigator();
 const Routers = () => {
   return (
@@ -38,9 +44,13 @@ const Routers = () => {
         <Stack.Screen name="list" component={List} />
         <Stack.Screen name="loginone" component={Loginone} />
         <Stack.Screen name="Scrollview" component={Scroll} />
-        <Stack.Screen name="Searchbar" component={search_bar} />
+        <Stack.Screen name="Searchbar" component={searchbar} />
         <Stack.Screen name="Switch" component={Switchone} />
         <Stack.Screen name="Toptabs" component={Toptabs} />
+        <Stack.Screen name="mobilecards" component={Mobilecards} />
+        <Stack.Screen name="hometop" component={HomeTop} />
+        <Stack.Screen name="homecard" component={Homecard} />
+        {/* <Stack.Screen name="parenthomecard" component={YourParentComponent} /> */}
         
       </Stack.Navigator>
     </NavigationContainer>

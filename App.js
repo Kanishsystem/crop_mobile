@@ -31,6 +31,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Routers from './src/Routers';
 import Toptabs from './src/Router/Toptabs';
+import Cards from './src/Router/cards';
 
  const Stack = createStackNavigator();
 
@@ -38,7 +39,7 @@ export default function App() {
   return (
   <>
  
- <Toptabs />
+ <Routers/>
   
    
 

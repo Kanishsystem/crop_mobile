@@ -54,19 +54,22 @@ const Community = () => (
 const Chats = () => (
   <ScrollView>
     <View>
+      
       <Image style={styles.image1} source={CHATS}></Image>
       <Text style={styles.text4}>Sharmila</Text>
       <Icon name="check" size={18} color="#087ec2" style={styles.icons} />
       <Text style={styles.text5}>Hiii... Yuva</Text>
       <Text style={styles.text6}>6.00 am</Text>
-      <View>
+
+
+      <View key="one">
         <Image style={styles.image1} source={CHAT}></Image>
         <Text style={styles.text4}>Arun</Text>
         <Icon name="check" size={18} color="#13ba3f" style={styles.icons} />
         <Text style={styles.text5}>This is Arun..</Text>
         <Text style={styles.text6}>5.27 pm</Text>
       </View>
-      <View>
+      <View key="two">
         <Image style={styles.image1} source={CHATS}></Image>
         <Text style={styles.text4}>Anitha</Text>
         {/* <Icon name="check" size={18} color="grey" style={styles.icons} /> */}
@@ -175,6 +178,8 @@ const Chats = () => (
 );
 
 const Updates = () => (
+
+
   <View>
     <View>
       <Text style={styles.text13}> Status</Text>
@@ -320,7 +325,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: 10,
     backgroundColor: "#ced6d0",
-    borderCurve: 0,
+    
   },
 
   image1: {
@@ -336,6 +341,9 @@ const styles = StyleSheet.create({
     marginTop: 65,
     color: "grey",
   },
+
+
+
 
   image4: {
     width: 65,
